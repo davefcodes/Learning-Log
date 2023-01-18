@@ -1,0 +1,32 @@
+{% extends "learning_logs/base.html" %} 
+{% load static %} 
+{% load bootstrap4 %}
+{% bootstrap_css %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
+</head>
+
+
+
+{% block page_header %}
+    <h2 class="test">Create a new account</h2>
+{% endblock page_header %}
+
+
+{% block content %} 
+    <form method="post" action="{% url 'users:register' %}" >
+        {% csrf_token %} 
+        {% bootstrap_form form %}
+       
+        <!-- <input type="hidden" name="redirect_url" value="{% url 'learning_logs:new_topic' %}"/> -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+     
+
+    </form>
+
+
+        
+       
+
+
+{% endblock content %} 

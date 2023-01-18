@@ -1,0 +1,19 @@
+{% extends "learning_logs/base.html" %}
+
+{% block page_header %}
+    <div class="jumbotron bg-secondary text-white"> 
+        <h1 class="display-3">Keep a record of your learning progress.</h1>
+
+        <p class="lead">Create a personal Learning Log and maintain a record of the topics you are studying. 
+            Each time you acquire new information on a topic, add a summary of your knowledge in the Log.
+        </p>
+
+        <a class="btn btn-lg btn-success border border-white" href="{% url 'users:register' %}"
+            role="button">Register &raquo;</a>
+    </div>
+{% endblock page_header %}
+
+
+
+
+

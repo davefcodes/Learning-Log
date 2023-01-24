@@ -1,6 +1,6 @@
 # Requirements for live project.
 gunicorn
 psycopg2
- Django==4.1.4
+
 
 
